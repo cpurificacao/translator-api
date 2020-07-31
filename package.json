@@ -1,0 +1,21 @@
+{
+  "name": "google-translate-api",
+  "version": "1.0.0",
+  "main": "src/main.js",
+  "repository": "https://github.com/cpurificacao/google-translate-api.git",
+  "author": "cpurificacao <carlos_dbdesktop@outlook.com>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "nodemon",
+    "prod": "pm2 start src/main.js --name google-translate-api",
+    "monit": "pm2 monit"
+  },
+  "devDependencies": {
+    "nodemon": "2.0.4"
+  },
+  "dependencies": {
+    "@google-cloud/translate": "6.0.2",
+    "express": "4.17.1",
+    "pm2": "4.4.0"
+  }
+}
